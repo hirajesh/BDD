@@ -19,7 +19,7 @@ public class cucumbe {
 	public void Open_firefox_and_start_application() throws Throwable 
 	{
 	
-		System.setProperty("webdriver.chrome.driver","D:\\Selenium\\New folder\\chromedriver.exe"); 
+	  System.setProperty("webdriver.chrome.driver","D:\\Selenium\\New folder\\chromedriver.exe"); 
 	  driver=new ChromeDriver();
 	  driver.manage().window().maximize();
 	  driver.get("http://122.165.236.133/multihospital/");
@@ -45,7 +45,9 @@ public class cucumbe {
 		Actions action=new Actions(driver);
 		action.moveToElement(submit).click().perform();
 		Thread.sleep(5000);
+		driver.close();
 		
 	}
+	
 
 }
