@@ -45,7 +45,7 @@ public class cucumbe {
 		Actions action=new Actions(driver);
 		action.moveToElement(submit).click().perform();
 		Thread.sleep(5000);
-	//	driver.close();
+		driver.close();
 		
 	}
 	
